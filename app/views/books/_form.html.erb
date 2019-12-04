@@ -1,0 +1,11 @@
+
+
+  <%= simple_form_for @book, :html=>{:multipart =>true} do |f|  %>
+  <%= select_tag(:section_id, options_for_select(@sections), :prompt=>"Select Section")%>
+  <%= f.file_field :book_img %>
+ <%= f.input :title,lable:"Title of Book" %>
+ <%= f.input :discription %>
+ <%= f.input :author %>
+ <%= f.button :submit %>
+ <% end %>
+  

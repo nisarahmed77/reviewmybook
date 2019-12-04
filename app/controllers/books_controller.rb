@@ -5,10 +5,10 @@ class BooksController < ApplicationController
   # GET /books.json
   def index
     if params[:section].blank?
-       @books = Book.all.order("created_at DESC")
+       @book = Book.all.order("created_at DESC")
      else
       section_id=Section.find_by(name:params[:section]).id
-      @books=Book.where(:section_id => section_id).order ("created_at DESC")
+      @book=Book.where(:section_id => section_id).order ("created_at DESC")
     end
   end
 

@@ -13,7 +13,7 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'pg'
 
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
